@@ -3,67 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+
     <title>User Registration</title>
   </head>
+
   <body>
     <h1>User Registration</h1>
 
-    <form>
-      <h2>Personal Details</h2>
+    <div id="container">
+      <form>
+        <div id="personal-details">
+          <h2>Personal Details</h2>
 
-      First Name:
-      <input type="text" placeholder="Enter First Name" />
-      <br /><br />
+          First Name:
+          <input type="text" placeholder="Enter First Name" />
+          <br /><br />
 
-      Last Name:
-      <input type="text" placeholder="Enter Last Name" />
-      <br /><br />
+          Last Name:
+          <input type="text" placeholder="Enter Last Name" />
+          <br /><br />
 
-      Age:
-      <input type="number" placeholder="Enter Age" />
-      <br /><br />
+          Age:
+          <input type="number" placeholder="Enter Age" />
+          <br /><br />
 
-      Gender:
-      <select>
-        <option selected>Male</option>
-        <option>Female</option>
-      </select>
-      <br /><br />
+          Gender:
+          <select>
+            <option selected>Male</option>
+            <option>Female</option>
+          </select>
+          <br /><br />
 
-      Profile Picture:
-      <input type="file" />
-      <br /><br />
+          Profile Picture:
+          <input type="file" />
+        </div>
 
-      <br />
+        <br />
 
-      <h2>Account Details</h2>
+        <div id="account-details">
+          <h2>Account Details</h2>
 
-      Email:
-      <input type="email" placeholder="Enter Email" />
-      <br /><br />
+          Email:
+          <input type="email" placeholder="Enter Email" />
+          <br /><br />
 
-      Password:
-      <input type="password" placeholder="Enter Password" />
-      <br /><br />
+          Password:
+          <input type="password" placeholder="Enter Password" />
+          <br /><br />
 
-      Role:
-      <input type="radio" name="role" /> Admin
-      <input type="radio" name="role" /> User
+          Role:
+          <input type="radio" name="role" /> Admin
+          <input type="radio" name="role" /> User
 
-      <br />
+          <br /><br />
 
-      <input type="checkbox" />
-      I agree to the terms and conditions
+          <input type="checkbox" />
+          I agree to the terms and conditions
+        </div>
 
-      <br /><br />
+        <br /><br />
 
-      <input type="submit" value="Register" />
-      <input type="reset" value="Reset" />
-    </form>
+        <div id="buttons">
+          <input type="submit" value="Register" />
+          <input type="reset" value="Reset" />
+        </div>
+      </form>
+    </div>
 
-    <br /><br />
+    <footer id="footer">
+      <p>© 2024 My Todo List. All rights reserved.</p>
+    </footer>
   </body>
-  <footer>
-    <p>© 2024 My Todo List. All rights reserved.</p>
-  </footer>
 </html>
