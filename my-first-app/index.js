@@ -1,0 +1,23 @@
+const fs = require("fs");
+const generateName = require("sillyname");
+
+let name = generateName();
+console.log(name);
+
+fs.writeFile("output.txt", "Hello, world", (err) => {
+  if (err) {
+    console.error("Error writing file", err);
+    return;
+  }
+
+  console.log("File written successfully");
+
+  fs.readFile("output.txt", "utf-8", (err, data) => {
+    if (err) {
+      console.error("Error reading file", err);
+    }
+
+    console.log("File contents:");
+    console.log(data);
+  });
+});

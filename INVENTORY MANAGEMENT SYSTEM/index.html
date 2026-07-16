@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1>Inventory Management System</h1>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Total Products</h3>
+          <p id="totalProducts">0</p>
+        </div>
+
+        <div class="card">
+          <h3>Total Stock</h3>
+          <p id="totalStock">0</p>
+        </div>
+
+        <div class="card">
+          <h3>Total Value</h3>
+          <p id="totalValue">Rs. 0</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>Add Product</h2>
+
+        <input type="text" id="productName" placeholder="Product Name" />
+        <input type="number" id="productQty" placeholder="Quantity" />
+        <input type="number" id="productPrice" placeholder="Price" />
+
+        <button onclick="addProduct()">Add Product</button>
+      </div>
+
+      <div class="box">
+        <h2>Product List</h2>
+
+        <input
+          type="text"
+          id="searchBox"
+          placeholder="Search product..."
+          onkeyup="searchProduct()"
+        />
+
+        <table>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Qty</th>
+              <th>Price</th>
+              <th>Total</th>
+              <th>Stock</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody id="productTable"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
